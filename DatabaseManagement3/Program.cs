@@ -21,9 +21,9 @@ namespace DatabaseManagement3
                 ComputerGame terraria = new ComputerGame() { Name = "Terraria", Price = 15, Description = "Dig, Fight, Explore!", GameID = 2 };
                 ComputerGame assettoCorsa = new ComputerGame() { Name = "Assetto Corsa", Price = 20, Description = "Driving simulation", GameID = 3 };
 
-                Character char1 = new Character() { Name = "Harry Potter", CharacterBackground = "Orphan", CharacterType = "Wizard", Level = 27, CharacterID = 1};
-                Character char2 = new Character() { Name = "Gilbert", Level = 12, CharacterType = "Rouge", CharacterBackground = "Pixel", CharacterID = 1};
-                Character char3 = new Character() { Name = "Stingray", Level = 1, CharacterType = "Car", CharacterBackground = "Car History", CharacterID = 1};
+                Character char1 = new Character() { Name = "Harry Potter", CharacterBackground = "Orphan", CharacterType = "Wizard", Level = 27, CharacterID = 1, GameID=1};
+                Character char2 = new Character() { Name = "Gilbert", Level = 12, CharacterType = "Rouge", CharacterBackground = "Pixel", CharacterID = 1, GameID=2};
+                Character char3 = new Character() { Name = "Stingray", Level = 1, CharacterType = "Car", CharacterBackground = "Car History", CharacterID = 1, GameID=3};
 
                 WriteLine("Created objects");
                 db.ComputerGames.Add(hogwartsLegacy);
